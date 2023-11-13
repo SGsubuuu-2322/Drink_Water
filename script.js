@@ -1,8 +1,10 @@
+// This is for general capturing of HTML Elements for further processing
 const smallcups = document.querySelectorAll(".cup-small");
 const liters = document.getElementById("liters");
 const percentage = document.getElementById("percentage");
 const remained = document.getElementById("remained");
 
+// This is for click event on the small cups...
 smallcups.forEach((cup, idx) => {
   cup.addEventListener("click", () => highLightSmallCups(idx));
 });
@@ -25,6 +27,8 @@ function highLightSmallCups(idx) {
 
   updateBigCups();
 }
+
+// This is for updating the big cup adding the dynamic stylings...
 
 function updateBigCups() {
   const fullCups = document.querySelectorAll(".cup-small.full").length;
