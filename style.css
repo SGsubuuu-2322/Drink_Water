@@ -1,3 +1,4 @@
+/* This is some general stylings for this project... */
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
 :root {
@@ -19,6 +20,8 @@ body {
   margin-bottom: 40px;
 }
 
+/* This is for headings... */
+
 h1 {
   margin: 10px 0 0;
 }
@@ -28,6 +31,7 @@ h3 {
   margin: 10px 0;
 }
 
+/* This is the common stylings for every cup in this project... */
 .cup {
   background-color: #fff;
   border: 4px solid var(--border-color);
@@ -41,6 +45,7 @@ h3 {
   overflow: hidden;
 }
 
+/* This is for only small cups in this project... */
 .cup.cup-small {
   height: 95px;
   width: 50px;
@@ -54,11 +59,13 @@ h3 {
   transition: 0.4s ease;
 }
 
+/* This is when cup small cup will get full... */
 .cup.cup-small.full {
   background-color: var(--fill-color);
   color: #fff;
 }
 
+/* This is for parent container containing small cups... */
 .cups {
   display: flex;
   align-items: center;
@@ -66,6 +73,8 @@ h3 {
   flex-wrap: wrap;
   width: 280px;
 }
+
+/* This is for remaining stylings in the big cup... */
 
 .remained {
   display: flex;
