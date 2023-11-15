@@ -9,6 +9,7 @@ smallcups.forEach((cup, idx) => {
   cup.addEventListener("click", () => highLightSmallCups(idx));
 });
 
+// This function is for highlighting the small cups which when clicked....
 function highLightSmallCups(idx) {
   if (
     smallcups[idx].classList.contains("full") &&
